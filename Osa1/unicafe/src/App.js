@@ -7,6 +7,8 @@ const Statistics = (props) => {
       <p>Good: {props.goods}</p>
       <p>Neutral: {props.neutrals}</p>
       <p>Bad: {props.bads}</p>
+      <p>Average: {(props.goods*1+props.neutrals*0+props.bads*-1)/(props.goods+props.neutrals+props.bads)}</p>
+      <p>Positive: {(props.goods*100)/(props.goods+props.neutrals+props.bads)}</p>
     </div>
     )
 
